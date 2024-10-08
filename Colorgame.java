@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Colorgame {
+public class P4_ANGELES_NATHANIELELLE_BIT112_OBC_OCT_1_2024 {
     public static void main(String[] args) {
 
         // Input
@@ -52,176 +52,42 @@ public class Colorgame {
         System.out.println("[*] Color 3: " + colors[color3]);
 
         System.out.println("\n----- Result -----");
-        // Color 1
-        switch (color1) {
-            case 0:
-                if (userColor1.equals(colors[0])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 1 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 1 did not match!");
-                }
-                break;
-            case 1:
-                if (userColor1.equals(colors[1])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 1 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 1 did not match!");
-                }
-                break;
-            case 2:
-                if (userColor1.equals(colors[2])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 1 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 1 did not match!");
-                }
-                break;
-            case 3:
-                if (userColor1.equals(colors[3])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 1 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 1 did not match!");
-                }
-                break;
-            case 4:
-                if (userColor1.equals(colors[4])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 1 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 1 did not match!");
-                }
-                break;
-            case 5:
-                if (userColor1.equals(colors[5])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 1 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 1 did not match!");
-                }
-                break;
 
-            default:
-                System.out.println("None of the above.");
+        for (int i = 0; i < 3; i++) {
+            switch (i) {
+                case 0:
+                    if (userColor1.equals(colors[color1]) || 
+                        userColor1.equals(colors[color2]) || 
+                        userColor1.equals(colors[color3])) {
+                        userWinnings += userBet * 2;
+                        System.out.println("Color 1 Match! You won: " + (userBet * 2));
+                    } else {
+                        System.out.println("Color 1 did not match!");
+                    }
+                    break;
+                case 1:
+                    if (userColor2.equals(colors[color1]) || 
+                        userColor2.equals(colors[color2]) || 
+                        userColor2.equals(colors[color3])) {
+                        userWinnings += userBet * 2;
+                        System.out.println("Color 2 Match! You won: " + (userBet * 2));
+                    } else {
+                        System.out.println("Color 2 did not match!");
+                    }
+                    break;
+                case 2:
+                    if (userColor3.equals(colors[color1]) || 
+                        userColor3.equals(colors[color2]) || 
+                        userColor3.equals(colors[color3])) {
+                        userWinnings += userBet * 2;
+                        System.out.println("Color 3 Match! You won: " + (userBet * 2));
+                    } else {
+                        System.out.println("Color 3 did not match!");
+                    }
+                    break;
+                default:
+                    System.out.println("None of the above.");
+            }
         }
-
-        // Color 2
-        switch (color2) {
-            case 0:
-                if (userColor2.equals(colors[0])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 2 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 2 did not match!");
-                }
-                break;
-            case 1:
-                if (userColor2.equals(colors[1])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 2 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 2 did not match!");
-                }
-                break;
-            case 2:
-                if (userColor2.equals(colors[2])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 2 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 2 did not match!");
-                }
-                break;
-            case 3:
-                if (userColor2.equals(colors[3])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 2 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 2 did not match!");
-                }
-                break;
-            case 4:
-                if (userColor2.equals(colors[4])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 2 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 2 did not match!");
-                }
-                break;
-            case 5:
-                if (userColor2.equals(colors[5])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 2 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 2 did not match!");
-                }
-                break;
-
-            default:
-                System.out.println("None of the above.");
-        }
-
-        // Color 3
-        switch (color3) {
-            case 0:
-                if (userColor3.equals(colors[0])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 3 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 3 did not match!");
-                }
-                break;
-            case 1:
-                if (userColor3.equals(colors[1])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 3 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 3 did not match!");
-                }
-                break;
-            case 2:
-                if (userColor3.equals(colors[2])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 3 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 3 did not match!");
-                }
-                break;
-            case 3:
-                if (userColor3.equals(colors[3])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 3 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 3 did not match!");
-                }
-                break;
-            case 4:
-                if (userColor3.equals(colors[4])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 3 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 3 did not match!");
-                }
-                break;
-            case 5:
-                if (userColor3.equals(colors[5])) {
-                    userWinnings += userBet * 2;
-                    System.out.println("Color 3 Match! You won: " + (userBet * 2));
-                } else {
-                    System.out.println("Color 3 did not match!");
-                }
-                break;
-
-            default:
-                System.out.println("None of the above.");
-        }
-
-        // Winnings
-        System.out.println("\n----- Player's Status -----");
-        System.out.println("[*] Total Winnings: " + userWinnings);
-
-        input.close();
-
     }
 }
